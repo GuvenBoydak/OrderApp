@@ -40,7 +40,7 @@ final class BasketCell: UITableViewCell {
         if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(basket.yemek_resim_adi ?? "")") {
             DispatchQueue.main.async {
                 self.foodImage.kf.setImage(with: url)
-            }
+            } 
         }
         guard let price = Int(basket.yemek_fiyat ?? "0"),let quantity = Int(basket.yemek_siparis_adet ?? "0") else {return}
         totalPriceLabel.text = "\(price * quantity) ₺"

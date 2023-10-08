@@ -7,17 +7,17 @@
 
 import Foundation
 
-class Response : Codable {
+struct Response : Codable {
     var success : Int?
     var message : String?
 }
 
-class FoodInBasketResponse : Codable {
+struct FoodInBasketResponse : Codable {
     var sepet_yemekler : [FoodInBasket]?
     var success : Int?
 }
 
-class FoodResponse : Codable {
+struct FoodResponse : Codable {
     var yemekler : [Food]?
     var success : Int?
 }

@@ -32,7 +32,7 @@ final class BasketViewModel {
                 print(error?.localizedDescription ?? "")
             }
             if let data = response {
-                print("Message : \(data.message)         Succeses : \(data.success)")
+                print("Message : \(data.message)        Succeses : \(data.success)")
             }
         }
        getBasketFood()
