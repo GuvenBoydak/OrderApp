@@ -10,7 +10,7 @@ import Foundation
 final class DetailViewModel {
     
     func addToFavorite(id:String,name:String,price:String,imageName:String) {
-        let firebaseFood : [String:Any] = ["id":"","name":name,"image":imageName,"price":price,"quantity":"","status":"Favorilere Eklendi"]
+        let firebaseFood : [String:Any] = ["id":"","name":name,"image":imageName,"price":price,"quantity":"","status":Shared.favoriler]
         Shared.firebasePath.document().setData(firebaseFood)
     }
     
@@ -25,7 +25,7 @@ final class DetailViewModel {
                 print("message : \(message.success) ,success : \(message.success)")
             }
         }
-        let firebaseFood : [String:Any] = ["id":"","name":name,"image":image,"price":price,"quantity":quantity,"status":"Sepete Eklendi"]
+        let firebaseFood : [String:Any] = ["id":"","name":name,"image":image,"price":price,"quantity":quantity,"status":Shared.sepeteEklenen]
         Shared.firebasePath.document().setData(firebaseFood)
     }
 }

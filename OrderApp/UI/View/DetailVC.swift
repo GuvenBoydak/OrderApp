@@ -41,7 +41,7 @@ final class DetailVC: UIViewController {
     
     
     @IBAction func increaseQuantityDidTapped(_ sender: Any) {
-        if let quantity = Int(foodQuantityLabel.text ?? ""),let price = Int(totolPriceLabel.text ?? ""),let foodPrice = Int(food?.yemek_fiyat ?? "") {
+        if let quantity = Int(foodQuantityLabel.text ?? "0"),let price = Int(totolPriceLabel.text ?? "0"),let foodPrice = Int(food?.yemek_fiyat ?? "0") {
             foodQuantityLabel.text = String(quantity + 1)
             let total = price + foodPrice
             totolPriceLabel.text = String(total)
@@ -49,7 +49,7 @@ final class DetailVC: UIViewController {
     }
     
     @IBAction func decreaseQuantityDidTapped(_ sender: Any) {
-        if let quantity = Int(foodQuantityLabel.text ?? ""),let price = Int(totolPriceLabel.text ?? ""),let foodPrice = Int(food?.yemek_fiyat ?? ""),quantity > 1{
+        if let quantity = Int(foodQuantityLabel.text ?? "0"),let price = Int(totolPriceLabel.text ?? "0"),let foodPrice = Int(food?.yemek_fiyat ?? "0"),quantity > 1{
             foodQuantityLabel.text = String(quantity - 1)
             let total = price - foodPrice
             totolPriceLabel.text = String(total)
