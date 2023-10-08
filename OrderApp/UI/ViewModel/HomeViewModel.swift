@@ -51,7 +51,7 @@ final class HomeViewModel {
                 print("message : \(message.success) ,success : \(message.success)")
             }
         }
-        var firebaseFood : [String:Any] = ["id":"","name":name,"image":image,"price":price,"quantity":quantity,"status":"Sepete Eklendi"]
+        var firebaseFood : [String:Any] = ["id":"","name":name,"image":image,"price":price,"quantity":quantity,"status":Shared.sepeteEklenen]
         Shared.firebasePath.document().setData(firebaseFood)
     }
 }
