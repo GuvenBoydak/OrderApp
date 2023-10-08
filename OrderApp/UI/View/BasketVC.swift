@@ -46,6 +46,9 @@ final class BasketVC: UIViewController {
                 totalPriceLabel.text = "\(total) ₺"
             }
         }
+        if basketList.count < 1 {
+            totalPriceLabel.text = "0 ₺"
+        }
     }
 
     @IBAction func conformToBasketDidTapped(_ sender: Any) {

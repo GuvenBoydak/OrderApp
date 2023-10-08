@@ -29,11 +29,12 @@
 		6823823D2AC9D6F800D5D8EB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6823823C2AC9D6F800D5D8EB /* FirebaseFirestore */; };
 		682382402AC9EB2900D5D8EB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6823823F2AC9EB2900D5D8EB /* RxSwift */; };
 		682382422AC9F53D00D5D8EB /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682382412AC9F53D00D5D8EB /* DetailVC.swift */; };
-		682382442AC9FD5E00D5D8EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 682382432AC9FD5E00D5D8EB /* GoogleService-Info.plist */; };
 		682382472AC9FD9100D5D8EB /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682382462AC9FD9100D5D8EB /* Shared.swift */; };
-		684F4F4F2ACDD78C005E907E /* TransportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F4F4E2ACDD78C005E907E /* TransportData.swift */; };
 		684F4F512ACDE0B3005E907E /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F4F502ACDE0B3005E907E /* BasketViewModel.swift */; };
 		687EEA192AD065C0003611C8 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EEA182AD065C0003611C8 /* DetailViewModel.swift */; };
+		687EEA1B2AD2C8D6003611C8 /* DetailBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EEA1A2AD2C8D6003611C8 /* DetailBasket.swift */; };
+		687EEA1D2AD2C985003611C8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EEA1C2AD2C985003611C8 /* ProfileViewModel.swift */; };
+		68A888592AD303E100408AED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68A888582AD303E100408AED /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +57,12 @@
 		6823822E2AC9D57200D5D8EB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		682382312AC9D63A00D5D8EB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		682382412AC9F53D00D5D8EB /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		682382432AC9FD5E00D5D8EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		682382462AC9FD9100D5D8EB /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		684F4F4E2ACDD78C005E907E /* TransportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportData.swift; sourceTree = "<group>"; };
 		684F4F502ACDE0B3005E907E /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 		687EEA182AD065C0003611C8 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		687EEA1A2AD2C8D6003611C8 /* DetailBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBasket.swift; sourceTree = "<group>"; };
+		687EEA1C2AD2C985003611C8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		68A888582AD303E100408AED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,8 @@
 		682382032AC9BBA400D5D8EB /* OrderApp */ = {
 			isa = PBXGroup;
 			children = (
+				68A888582AD303E100408AED /* GoogleService-Info.plist */,
 				682382452AC9FD7900D5D8EB /* Helper */,
-				682382432AC9FD5E00D5D8EB /* GoogleService-Info.plist */,
 				682382302AC9D62C00D5D8EB /* Service */,
 				682382192AC9BBBC00D5D8EB /* Data */,
 				682382182AC9BBAB00D5D8EB /* UI */,
@@ -148,6 +150,7 @@
 				6823822E2AC9D57200D5D8EB /* HomeViewModel.swift */,
 				684F4F502ACDE0B3005E907E /* BasketViewModel.swift */,
 				687EEA182AD065C0003611C8 /* DetailViewModel.swift */,
+				687EEA1C2AD2C985003611C8 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,7 +161,7 @@
 				682382282AC9D31000D5D8EB /* Food.swift */,
 				6823822A2AC9D3D700D5D8EB /* FoodInBasket.swift */,
 				6823822C2AC9D50200D5D8EB /* Response.swift */,
-				684F4F4E2ACDD78C005E907E /* TransportData.swift */,
+				687EEA1A2AD2C8D6003611C8 /* DetailBasket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				682382112AC9BBA400D5D8EB /* LaunchScreen.storyboard in Resources */,
-				682382442AC9FD5E00D5D8EB /* GoogleService-Info.plist in Resources */,
+				68A888592AD303E100408AED /* GoogleService-Info.plist in Resources */,
 				6823820E2AC9BBA400D5D8EB /* Assets.xcassets in Resources */,
 				6823820C2AC9BBA400D5D8EB /* Main.storyboard in Resources */,
 			);
@@ -275,14 +278,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				682382472AC9FD9100D5D8EB /* Shared.swift in Sources */,
+				687EEA1D2AD2C985003611C8 /* ProfileViewModel.swift in Sources */,
 				684F4F512ACDE0B3005E907E /* BasketViewModel.swift in Sources */,
 				682382232AC9CD4F00D5D8EB /* homeFoodCell.swift in Sources */,
 				6823821E2AC9CB9000D5D8EB /* ProfileVC.swift in Sources */,
 				682382202AC9CB9E00D5D8EB /* BasketVC.swift in Sources */,
 				682382252AC9CD8C00D5D8EB /* profileBasketDetailCell.swift in Sources */,
-				684F4F4F2ACDD78C005E907E /* TransportData.swift in Sources */,
 				682382092AC9BBA400D5D8EB /* HomeVC.swift in Sources */,
 				682382292AC9D31000D5D8EB /* Food.swift in Sources */,
+				687EEA1B2AD2C8D6003611C8 /* DetailBasket.swift in Sources */,
 				6823822B2AC9D3D700D5D8EB /* FoodInBasket.swift in Sources */,
 				6823822F2AC9D57200D5D8EB /* HomeViewModel.swift in Sources */,
 				6823822D2AC9D50200D5D8EB /* Response.swift in Sources */,
