@@ -24,29 +24,6 @@ final class HomeViewModel {
         }
     }
     
-  /*  func getFavoriteFoods() {
-        var listFood = [Food]()
-        Shared.firebasePath.getDocuments { snapshot, error in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
-            }
-            if let documents = snapshot {
-                for document in documents.documents {
-                    let data = document.data()
-                    guard let id = data["id"] as? String,
-                          let name = data["name"] as? String,
-                          let price = data["price"] as? String,
-                          let image = data["image"] as? String,
-                          let isFavorite = data["isFavorite"] as? Bool else { return}
-                    var food = Food(yemek_id: id, yemek_adi: name, yemek_resim_adi: image, yemek_fiyat: price)
-                    food.setIsFavorite(value: isFavorite)
-                    listFood.append(food)
-                }
-                self.foods.onNext(listFood)
-            }
-        }
-    }*/
-    
     func searchFoods(keyword: String) {
         var list = [Food]()
         NetworkService.shared.request(type: FoodResponse.self,url: "tumYemekleriGetir.php", method: .get, params: nil) { response,error in
